@@ -18,9 +18,6 @@ After installed the required package, run `$ go build` to generate the binary ex
 
  - Extra arguments would be treated as BPF filter. Error would be raised if there's syntax error in the BPF expression
 
-If additional argument entered, the additional args would treated as BPF filter, error would 
-be raised if there's any syntax error in the expression.
-
 ## Performance:
 About 8ms-22ms delay (depending on system load), would win the race in most cases if the DNS server is outside LAN. Tested under Windows hosted VMware Workstation, with Intel Core i5 processor, guest OS is Debian buster, golang version 1.11.
 
